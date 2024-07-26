@@ -1,2 +1,2 @@
-# WebAppSecurity
-Using for testing and pentesting a webpage or file.
+# webshaz
+This tool will perform a SAST for Web Application.

@@ -1,0 +1,391 @@
+body
+{
+  max-width: 2000px;
+}
+.title{
+    vertical-align: middle;
+    display: inline;
+    font-size: 63px;
+    color: rgb(0, 117, 255);
+    padding: 10px 10px;
+    font-family: 'monospac,monaco,IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    
+}
+.header{
+    text-align: center;
+    margin-top: 80px;
+
+    
+}
+.description
+{
+    text-align: center;
+    margin: 40px;
+}
+
+.desc-text
+{
+    font-weight: normal;
+    font-family: Roboto;
+}
+ /* Style the tab */
+.tab {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 60px;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    min-width: 350px;
+    background-color: white;
+    width: 1fr;
+    cursor: pointer;
+    border: 3px solid rgba(208,208,208,100%);
+    border-top: 0px;
+    border-left: 0;
+    border-right: 0;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  
+  .tab button:hover {
+    background-color: rgba(208,208,208,50%);
+  }
+  
+  
+  .tab button.active {
+    border-bottom: rgb(0, 117, 255);
+    border-width: 4px;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0;
+    border-right: 0;
+    color: rgb(0, 117, 255);
+    
+  }
+  .tabcontent {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 2000px;
+    margin: 0;
+  }
+
+  .tablinks
+  {
+    font-size: 17px;
+    font-family: 'Cabin', sans-serif;
+  }
+
+
+.lang
+{
+  font-family: 'Roboto', sans-serif;
+  display: inline;
+  font-size: 20px;
+  vertical-align: text-bottom;
+  margin-top: 25px;
+  padding-right: 10px;
+  font-weight: lighter;
+
+  
+}
+
+.language-selection 
+{
+  
+  display: grid;
+  grid-template-columns: 220px 150px;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 20px;
+  width: 1900px;
+}
+
+#dropdown {
+  padding: 10px 25px 10px 20px;
+  border: 2px solid #999999;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  width: 100px;
+  background: url('down-arrow.png') no-repeat right center;
+  background-size: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+  vertical-align: bottom;
+}
+
+#dropdown option {
+  background-color: #fff;
+  color: #333;
+}
+
+#dropdown:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  background-color: #fff;
+}
+
+
+.textbox {
+  height: 250px;
+  position: relative;
+  margin-left: 470px;
+  margin-right: 100px;
+  margin-top: 40px;
+  text-align: center;
+  width: 950px;
+  
+  
+}
+.textbox input[type="text"] {
+  height: 750px;
+  width: 2000px;
+  border: 1px solid grey;
+  border-bottom: 2px solid #ccc;
+  font-size: 18px;
+  padding: 10px 10px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: transparent;
+}
+.textbox label {
+  font-family: Roboto;
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  font-size: 20px;
+  color: rgba(117, 112, 112, 0.75);
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+  
+}
+
+
+.analyze-btn
+{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-right: 120px;
+  text-align: center;
+  margin-top: 10px;
+  width: 150px;
+  font-size: 16px;
+  font-family: 'Roboto';
+  
+}
+
+.upload-box {
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  width: 700px;
+  height: 320px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin-top: 30px;
+  padding-right: 100px;
+  margin-bottom: 10px;
+  
+}
+
+#drop_zone {
+  width: 300px;
+  height: 200px;
+  border: 2px dashed #ccc;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.drag-text {
+  text-align: center;
+}
+
+.drag-text h4 {
+  margin: 10px;
+}
+
+#file_input {
+  display: none;
+}
+
+.upload-btn {
+  background-color: #1a75ff;
+  border: none;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.drop-text {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color:#999999;
+  font-weight: bold;
+}
+
+.upload-btn {
+  background-color:#007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  word-spacing: 10px;
+  transition: 0.2s;
+  font-weight: normal;
+}
+
+.upload-btn:hover {
+  background-color:white;
+  color: black;
+  border: 1px solid black;
+}
+
+/* #file-input {
+
+} */
+#cont-cont{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(99, 98, 98);
+}
+#cont{
+  padding: 2rem 10rem;
+  border: dashed 1px black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+::-webkit-file-upload-button {
+  border: solid 1px black;
+  padding: 0.5rem 0.7rem;
+  background-color: white;
+}
+
+#file-upload label{
+  cursor: pointer;
+} 
+
+#analyze-btn-cont{
+  margin-top: 1.2rem;
+}
+#analyze-btn{
+  border: none;
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(68, 68, 255);
+  font-weight: bold;
+  color: white;
+  font-size: 16.5x;
+  border-radius: 3px;
+} 
+.tabcontent .upload-cont{
+  border: solid 1px black !important;
+  background-color: gray;
+}
+
+
+
+.url-page
+{
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1ft ;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-left: 15px;
+  margin-right: 200px;
+}
+
+.input-container input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+  position: relative;
+}
+.input-container:active
+{
+  border: 1px solid black;
+}
+
+.input-container button {
+      background-color: #007bff;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 50px;
+    right: 370;
+    top: 475;
+    margin-right: 200px;
+  
+}
+
+.analyze-btn-url {
+    background-color: #007bff;
+    position: absolute;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-right: 100px;
+    /* text-align: end; */
+    /* margin-top: 30px; */
+     width: 150px;
+    font-size: 16px;
+    font-family: 'Roboto';
+} 
+
+.url-desc
+{
+  font-size: 12px;
+  color: #999999;
+  font-family: 'Roboto';
+  margin-top: 10px;
+  
+}
